@@ -19,15 +19,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8M-QV-iYk">
-                                <rect key="frame" x="163.5" y="430" width="87" height="36"/>
+                                <rect key="frame" x="157" y="430" width="100" height="36"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="mEA-Q6-esj"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="mEA-Q6-esj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Show Me!">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="showMeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vaz-oj-f7V"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2B-p2-wzR">
                                 <rect key="frame" x="15" y="144" width="384" height="29"/>
@@ -46,6 +49,10 @@
                             <constraint firstItem="d2B-p2-wzR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="n7E-00-KwW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWorldLabel" destination="d2B-p2-wzR" id="b1D-B5-krG"/>
+                        <outlet property="showMeButton" destination="U8M-QV-iYk" id="HQ6-ff-qWX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
